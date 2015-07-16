@@ -1,0 +1,283 @@
+*{
+	box-sizing:border-box;
+}
+html
+	 { 
+	  background: url(images/corkBoardWP.jpg) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+    display: block;
+   /* border: 20px solid #E39958;
+    box-shadow: inset 10px 10px 40px black;*/
+	 }
+body{
+  display: block;
+	margin:1;
+}
+.multiple-borders{
+    width: 100vw;
+    height: 100vh;
+    -webkit-box-shadow:
+            0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #E39958,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+   
+     -moz-box-shadow:
+            0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #E39958,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+   
+          box-shadow:
+            0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #E39958,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+}
+.container{
+   width: 90%;
+  margin: 30px auto;
+  padding: 25px;
+  min-height: 400px;
+  height: auto;
+}
+.quote-container{
+  position: absolute;
+  z-index: 1;
+}
+ul,li{
+  list-style:none;
+}
+ul{
+  margin: 0px;
+  overflow:hidden;
+  padding:3em;
+}
+ul li{
+  margin:1em;
+  float:left;
+}
+.quote{
+  font-family: Satisfy;
+  font-size: 25px;
+  margin: 0px;
+  text-align: center;
+}
+.author{
+  display: block;
+  margin: 20px 0 0 0;
+  text-align: right;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:15em;
+  width:15em;
+  padding:1em;
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+   -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+  /*tilting the notes*/
+   -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+ /*tilting the notes for the child*/
+ul li:first-child a{
+  position: relative;
+  -o-transform:rotate(-20deg);
+  -webkit-transform:rotate(-20deg);
+  -moz-transform:rotate(-20deg);
+  top:95px;
+  left: 80px;
+  color: #000066;
+  z-index: 1;
+  background: #CCE6FF;
+} 
+ul li:nth-child(2n) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:-55px;
+  left:-50px;
+z-index: 0;
+}
+ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:150px;
+  right: -100px;
+}
+ul li:nth-child(4n) a{
+  -o-transform:rotate(3deg);
+  -webkit-transform:rotate(3deg);
+  -moz-transform:rotate(3deg);
+  position:relative;
+  top:175px;
+  left: 100px;
+  color: #6600FF;
+  background: #cccdff;
+}
+ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+  right: -500px;
+  color:#003300;
+  background: #cfc;
+}
+/* Zooming and focus the notes*/
+ul li a:hover,ul li a:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+.button{
+  display: block;
+  margin: 20px 0 0 110px;
+  text-align: right;
+  border: 0;
+  font-family: Satisfy;
+  font-size: 35px;
+  color: green;
+  background: transparent;
+}
+.quote-container span{
+  background: url(images/tape2.png) no-repeat;
+  width: 77px;
+  height: 27px;
+  display: block;
+  position: absolute;
+  left: 90px;
+  top: -12px;
+}
+
+/*Polaroid images*/
+.polaroid-images{
+  position: absolute;
+  z-index: 1;
+  pointer-events:none;
+}
+.polaroid-images a
+{
+  background: white;
+  display: inline;
+  float: left;
+  margin: 0 15px 30px;
+  padding: 10px 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Patrick Hand SC';
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear;
+  z-index:0;
+  position:relative;
+}
+
+/* this is for the title on bottom of our poloroid picture*/
+.polaroid-images a:after {
+  color: #333;
+  font-size: 20px;
+  content: attr(title);
+  position: relative;
+  top:15px;
+}
+/* the image to fit the poloroid area always */
+.polaroid-images img { 
+  display: block; 
+  width: inherit; 
+}
+/* rotation on the pictures */
+.polaroid-images a:first-child{
+  -webkit-transform: rotate(-10deg);  
+  -moz-transform: rotate(-10deg); 
+  transform: rotate(-10deg);
+  left: -100px;
+  top:-40px;
+}
+.polaroid-images a:nth-child(2n)
+{
+  -webkit-transform: rotate(4deg);  
+  -moz-transform: rotate(4deg); 
+  transform: rotate(4deg); 
+  right: -190px;
+  top:-40px;
+}
+.polaroid-images a:nth-child(3n) { 
+  -webkit-transform: rotate(-20deg);  
+  -moz-transform: rotate(-20deg); 
+  transform: rotate(-20deg); 
+  top: -20px;
+  right: -150px;
+} 
+.polaroid-images a:nth-child(4n)
+{
+  -webkit-transform: rotate(14deg);  
+  -moz-transform: rotate(14deg); 
+  transform: rotate(14deg);
+  left: -150px;
+  top:30px; 
+}
+.polaroid-images a:nth-child(5n)
+{
+  -webkit-transform: rotate(-18deg);  
+  -moz-transform: rotate(-18deg); 
+  transform: rotate(-18deg); 
+  left:-170px;
+
+}
+.polaroid-images a:nth-child(6n)
+{
+  -webkit-transform: rotate(20deg);  
+  -moz-transform: rotate(20deg); 
+  transform: rotate(20deg); 
+  top: 45px;
+  right: -100px;
+}
+/*to make the picture to move*/
+.polaroid-images a:hover{
+  -webkit-transform: rotate(0deg); 
+  -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+  -webkit-transform: scale(1.2); 
+  -moz-transform: scale(1.2);
+        transform: scale(1.2);
+  z-index:10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+        box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+.polaroid-images span{
+  background: url(images/pin.png) no-repeat;
+  width: 77px;
+  height: 27px;
+  display: block;
+  position: absolute;
+  left: 140px;
+  top: -12px;
+}

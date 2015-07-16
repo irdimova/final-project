@@ -1,0 +1,108 @@
+*{
+	box-sizing:border-box;
+}
+html
+	 { 
+	  background: url(images/corkBoardWP.jpg) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+    display: block;
+    border: 20px solid #E39958;
+    box-shadow: inset 10px 10px 40px black;
+	 }
+body{
+  display: block;
+	margin:30px 50px;
+
+}
+/*Polaroid images*/
+.polaroid-images a
+{
+  background: white;
+  display: inline;
+  float: left;
+  margin: 0 15px 30px;
+  padding: 10px 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Patrick Hand SC';
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear;
+  z-index:0;
+  position:relative;
+}
+/* this is for the title on bottom of our poloroid picture*/
+.polaroid-images a:after {
+  color: #333;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top:15px;
+}
+.polaroid-images a:hover:after {
+  color:#fff;
+}
+/* the image to fit the poloroid area always */
+.polaroid-images img { 
+  display: block; 
+  width: inherit; 
+}
+/* rotation on the pictures */
+.polaroid-images a:nth-child(2n)
+{
+  -webkit-transform: rotate(4deg);  
+  -moz-transform: rotate(4deg); 
+  transform: rotate(4deg); 
+}
+.polaroid-images a:nth-child(3n) { 
+  -webkit-transform: rotate(-24deg);  
+  -moz-transform: rotate(-24deg); 
+  transform: rotate(-24deg); 
+} 
+.polaroid-images a:nth-child(4n)
+{
+  -webkit-transform: rotate(14deg);  
+  -moz-transform: rotate(14deg); 
+  transform: rotate(14deg); 
+}
+.polaroid-images a:nth-child(5n)
+{
+  -webkit-transform: rotate(-18deg);  
+  -moz-transform: rotate(-18deg); 
+  transform: rotate(-18deg); 
+}
+.polaroid-images a:nth-child(6n)
+{
+  -webkit-transform: rotate(10deg);  
+  -moz-transform: rotate(10deg); 
+  transform: rotate(10deg); 
+}
+/*to make the picture to move and make some color change after you hover */
+.polaroid-images a:hover{
+  -webkit-transform: rotate(0deg); 
+  -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+  -webkit-transform: scale(1.2); 
+  -moz-transform: scale(1.2);
+        transform: scale(1.2);
+  z-index:10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+        box-shadow: 0 10px 20px rgba(0,0,0,.7);
+  background: #161613; /* or #E1E1BD #CACAAA*/
+}
+.polaroid-images span{
+  background: url(images/pin.png) no-repeat;
+  width: 77px;
+  height: 27px;
+  display: block;
+  position: absolute;
+  left: 140px;
+  top: -12px;
+}

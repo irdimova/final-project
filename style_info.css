@@ -1,0 +1,173 @@
+*{
+    box-sizing:border-box;
+}
+html
+     { 
+      background: url(images/corkBoardWP.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    display: block;
+    border: 20px solid #E39958;
+    box-shadow: inset 5px 5px 40px black;
+     }
+body{
+  display: block;
+    margin:30px 50px;
+
+}h1{
+    text-align: center;
+    font-family: 'Patrick Hand SC';
+}
+#slider {  
+    width: 600px;  
+    margin: 0 auto;  
+    position: relative;  
+
+}  
+  
+.slider-mask {  
+    overflow:hidden;  
+    position: relative; 
+    border: 10px solid white;
+    box-shadow: 3px 3px 10px #888888;
+    
+}  
+  
+.slider-img {  
+    margin:0;   
+    float: left;  
+    position: relative;  
+    background: white;
+}   
+.caption  {  
+    color:#DC6804;   
+    padding:5px 10px 10px 10px;   
+    margin:0;   
+    font-family:'Patrick Hand SC';   /*Verdana*/
+    text-transform:uppercase;   
+    font-size:20px;  
+}    
+     
+#button-prev {  
+    position: absolute;  
+    top: 180px;  
+    cursor: pointer;  
+    left: -60px;  
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        z-index: 2;
+}  
+  
+#button-next {  
+    position: absolute;  
+    top: 180px;  
+    cursor: pointer;  
+    right: -60px;  
+    z-index: 2;
+}  
+  
+/*  
+adjust #slider-content width as needed  
+width = image width * image count 
+width = 600px * 3 = 1800px  
+*/  
+#slider-content {  
+    width: 1800px;  
+    position: relative;  
+}  
+
+.quote-container{
+  position: absolute;
+  z-index: 1;
+}
+ul,li{
+  list-style:none;
+}
+ul{
+  margin: 0px;
+  /*overflow:hidden;*/
+  padding:3em;
+}
+ul li{
+  margin:1em;
+  float:left;
+}
+.quote{
+  font-family: Satisfy;
+  font-size: 20px;
+  margin: 0px;
+  text-align: center;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:12em;
+  width:12em;
+  padding:1em;
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+   -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+  /*tilting the notes*/
+}
+ /*tilting the notes for the child*/
+ul li:first-child a{
+  position: relative;
+  top:-55px;
+  left: 0px;
+  color: #000066;
+  z-index: 1;
+  background: #CCE6FF;
+} 
+ul li:nth-child(2n) a{
+  position:relative;
+  top:180px;
+  left:-300px;
+z-index: 0;
+}
+ul li:nth-child(3n) a{
+  position:relative;
+  top:-55px;
+  right: -455px;
+  background: #cfc;
+}
+ul li:nth-child(4n) a{
+  position:relative;
+  top:180px;
+  left: 300px;
+  color: #6600FF;
+  background: #cccdff;
+}
+/* Zooming and focus the notes*/
+ul li a:hover,ul li a:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+.quote-container span{
+  background: url(images/pin.png) no-repeat;
+  width: 77px;
+  height: 27px;
+  display: block;
+  position: absolute;
+  left: 90px;
+  top: -12px;
+}
