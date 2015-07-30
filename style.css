@@ -247,7 +247,7 @@ ul li:nth-child(5n) a{
   top: -12px;
 }
 
-@media screen and (max-width: 1000px ) {
+@media screen and (max-width: 800px ) {
   .polaroid-images{
     height: 1500px;
   }
