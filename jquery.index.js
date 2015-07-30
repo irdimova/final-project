@@ -37,3 +37,7 @@
    });  
 })(jQuery);  
 
+//function for button go back
+  function goBack() {
+           window.history.back();
+       }

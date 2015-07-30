@@ -1,20 +1,18 @@
 *{
-	box-sizing:border-box;
+  box-sizing:border-box;
 }
 html
-	 { 
-	  background: url(images/corkBoardWP.jpg) no-repeat center center fixed; 
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
+   { 
+    background: url(images/corkBoardWP.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: block;
-    border: 20px solid #E39958;
-    box-shadow: inset 10px 10px 40px black;
-	 }
+   }
 body{
   display: block;
-	margin:0;
+  margin:0;
 }
 
 .container{
@@ -30,15 +28,15 @@ ul,li{
 }
 ul{
   overflow:hidden;
-  padding:1.5em;
-  padding-left: 4em;
+  padding:2.2em;
+  padding-left: 5em;
 }
 ul li{
   margin:0.1em;
   float:left;
 }
 p{
-  font-family: Satisfy;
+  font-family: 'Satisfy';
   font-size: 25px;
   margin: 0px;
   text-align: center;
@@ -111,44 +109,35 @@ ul li a:hover,ul li a:focus{
   top: -12px;
 }
 /*slide-down*/
-article{
-  text-decoration:none;
-  color:#000;
-  background:#ffc;
-  display:block;
-  height:25em;
-  width:45em;
-  padding:1em;
-  /* Firefox */
-  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
-  /* Safari+Chrome */
-  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  /* Opera */
-  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-   -moz-transition:-moz-transform .15s linear;
-  -o-transition:-o-transform .15s linear;
-  -webkit-transition:-webkit-transform .15s linear;
-}
-article ul{
-  padding-left: 1em;
-  margin: 0px;
-}
 h1{
   display: inline;
   padding-left: 5px;
+  font-family: 'Patrick Hand SC';
 }
 ol li{
   list-style: decimal;
   float: none;
+  text-align: bold;
+  font-size: 1.5em;
 }
 h2, p {
   text-align: left;
+}
+h2{
+  margin-bottom: 0px;
+}
+h2, ol li{
+  font-family: 'Patrick Hand SC';
+}
+small{
+  font-family: 'Satisfy';
+  font-size: 1.1em;
 }
 .polaroid-image{
   background: white;
   display: inline;
   float: left;
-  margin: 0 15px 30px;
+  margin: 0 15px 15px;
   padding: 10px 10px 25px;
   text-align: center;
   text-decoration: none;
@@ -162,9 +151,73 @@ h2, p {
   z-index:0;
   position:relative;
 } 
-/*
+.info{
+  padding-left: 1em;
+  margin: 0px;
+  background:#ffc;
+}
+#inline1,#inline3,#inline7,#inline13,#inline15,#inline21,#inline25,#inline27,
+#inline31,#inline33,#inline37,#inline43,#inline45{
+  background:#cfc ;
+}
+#inline2,#inline5,#inline8,#inline11,#inline17,#inline20,#inline23,#inline26,#inline32,#inline35,
+#inline38,#inline41,#inline47,#inline50{
+  background: #CCE6FF;
+}
+#inline4,#inline9,#inline14,#inline19,#inline24,#inline29,#inline34,#inline39,#inline44
+#inline49{
+  background: #cccdff;
+}
 #slide-down{
   display: none;
   overflow: hidden;
+  height:25em;
+  width:45em;
 }
-*/
+/* button go back*/
+button {
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+   border-top: 1px solid #f7c197;
+   background: #d69665;
+   background: -webkit-gradient(linear, left top, left bottom, from(#9c573e), to(#d69665));
+   background: -webkit-linear-gradient(top, #9c573e, #d69665);
+   background: -moz-linear-gradient(top, #9c573e, #d69665);
+   background: -ms-linear-gradient(top, #9c573e, #d69665);
+   background: -o-linear-gradient(top, #9c573e, #d69665);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 20px;
+   font-family: 'Patrick Hand SC';
+   text-decoration: none;
+   vertical-align: middle;
+   }
+button:hover {
+   border-top-color: #784529;
+   background: #784529;
+   color: #ccc;
+   }
+button:active {
+   border-top-color: #5c2a1b;
+   background: #5c2a1b;
+   }
+/*to remove the blue border around the button when is on focus*/
+button:focus {
+  outline:0;
+}
+ @media screen and (max-width: 800px){
+   ul{
+    padding-left: 5em;
+  }
+  button{
+    bottom: -470px;
+  }
+ }
