@@ -1,61 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Love to travel</title>
-	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love to travel</title>
+  <link rel="stylesheet" href="screen.css" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+  <script src="photo/data.js" type="text/javascript"></script>
 </head>
-<body>
-	 <div class="container"> 
-    <input type="image" src="images/logo.png" class="button" onclick="location.href='index_continents.html'" />
-		<div class="quote-container">
-			<ul>
-  				<li>
-   					<a href="#"><span></span>
-    				 <blockquote class="quote">
-						"I haven't been everyhere, but it's on my list."
-   			    		<cite class="author">Susan Sontag</cite>
-   			    	</blockquote>
-                    </a>
-             	</li>
-  				<li>
-   					<a href="#"><span></span>
-     				 <blockquote class="quote">
-				     "The World is a book, and those who do not travel read only a page."
-   			    	<cite class="author">St. Augustine</cite>
-  					 </blockquote>
-    				</a>
- 				</li>
- 				<li>
-   					<a href="#"><span></span>
-              <blockquote class="quote">Travel is the only thing you buy that make you richer...</blockquote>
-            </a>
-        </li>
-        <li>
-   					<a href="#"><span></span>
-              <blockquote class="quote">My favorite thing is to go where I've never been...</blockquote>
-            </a>
-        </li>
-        <li>
-            <a href="#"><span></span>
-              <blockquote class="quote">You love to travel... That is your passion... Then fine your place to go...</blockquote>
-            </a>
-        </li>
-            </ul>
+<body onselectstart="return false;">
+<div id="jquery-script-menu" style="border-top: 5px solid #88371A;
+        background: rgba(244, 186, 127, 0.6);">
+<div class="jquery-script-center">
+  <h2>Love to Travel</h2><input type="image" src="photo/logo.png" class="button" onclick="location.href='index_continents.html'" />
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1 style="margin:150px auto 30px auto; text-align:center;"></h1>
+  <div class="wrap" id="wrap">
+    <div class="photo photo_front" id="photo_{{index}}" onclick="turn(this)">
+      <div class="photo-wrap">
+        <div class="side side-front">
+          <p class="image"><img src="photo/{{img}}"></p>
+          <p class="caption">{{caption}}</p>
         </div>
-		<div class="polaroid-images">
-			<a href="" title="Maya Bay"><span></span><img height="200" src="images/Maya_Bay_Phi_Phi.jpg" alt="Maya_Bay" title="Maya" /></a>
-			<a href="" title="Autom"><span></span><img height="200" src="images/Autom.jpg" alt="Autom" title="Autom" /></a>
-			<a href="" title="Spring"><span></span><img height="200" src="images/Spring.jpg" alt="Spring" title="Spring" /></a>
-			<a href="" title="Moutains"><span></span><img height="200" src="images/maxresdefault.jpg" alt="Moutains" title="Moutains" /></a>
-			<a href="" title="Thailand"><span></span><img height="200" src="images/thailand.jpg" alt="Thailand" title="Thailand" /></a>
-			<a href="" title="Nature"><span></span><img height="200" src="images/Nature_random.jpg" alt="Nature" title="Nature" /></a>
+        <div class="side side-back">
+          <p class="desc">{{desc}}</p>
+        </div>
+      </div>
+    </div>
+</div>
+  <script type="text/javascript">
 
-		</div>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
 
- 	</div>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </body>
 </html>
