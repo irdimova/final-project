@@ -32,7 +32,7 @@ Eat well travel often<br>\
 <br>\
 7.Love traveling<br>\
 <br>\
-Love to travel hate to arrive<br>\
+Love to travel hate to arrive...<br>\
 "
 var d = dataStr.split("<br><br><br>");
 for(var i = 0; i<d.length; i++){
