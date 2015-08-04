@@ -30,7 +30,7 @@ Happiness is a way to ravel not a destination<br>\
 Eat well travel often<br>\
 <br>\
 <br>\
-7.Love Traveling<br>\
+7.Love traveling<br>\
 <br>\
 Love to travel hate to arrive<br>\
 "
