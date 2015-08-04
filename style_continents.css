@@ -97,7 +97,7 @@ body{
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
   -moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
         box-shadow: 0 10px 20px rgba(0,0,0,.7);
-  background: #161613; /* or #E1E1BD #CACAAA*/
+  background: #161613; 
 }
 .polaroid-images span{
   background: url(images/pin.png) no-repeat;

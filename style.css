@@ -7,7 +7,7 @@
 body {
   background-color: #88371A;
   color: #555;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: 'Satisfy';
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -15,7 +15,7 @@ body {
 h2{
   text-align: center;
   font-size: 5em;
-  font-family: Satisfy;
+  font-family: 'Satisfy';
 }
 .wrap {
   width: 100%;
@@ -171,4 +171,18 @@ h2{
   top:-6px;
   left:879px;
   z-index: 20;
+}
+
+@media screen and (max-width: 800px){
+  h2{
+  text-align: left;
+  font-size: 4em;
+  margin-top: 0.2em;
+  margin-left: 1em;
+}
+.button{
+  width: 3em;
+  top:11px;
+  left:357px;
+}
 }
